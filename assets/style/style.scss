@@ -1,0 +1,310 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-2');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background-color: #27282C;
+	font-family: 'Helvetica', sans-serif;
+}
+
+
+
+//
+.header__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	width: 1300px;
+	display: flex;
+	justify-content: space-between;
+
+	&__logo {
+	}
+}
+
+
+.nav {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+
+.nav__item {
+	position: relative;
+	z-index: 1000;
+
+	i {
+		color: #A1A1A3;
+	}
+
+	&__title {
+		color: #A1A1A3;
+		font-size: 1.3rem;
+		font-weight: 500;
+		cursor: pointer;
+
+		&.active {
+			color: #fff;
+		}
+	}
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	width: 1300px;
+	height: 580px;
+	top: 186%;
+	//display: flex;
+	background-color: #fff;
+
+	&_dev-tools {
+		right: -469%;
+
+	}
+}
+
+.arrow {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	transition: background-color .3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, .2);
+	}
+}
+
+.recomend-tolls-column {
+}
+
+.spase {
+	background-image: linear-gradient(117.63deg, rgb(8, 89, 255) -0.78%, rgb(0, 154, 231) 55.03%, rgb(221, 255, 84) 111.19%);
+	background-color: rgb(22, 125, 255);
+
+	&__logo {
+	}
+
+	&__title {
+	}
+}
+
+.fleet {
+	background-image: linear-gradient(130.93deg, rgb(105, 2, 154) 0%, rgb(135, 1, 199) 32.33%, rgb(107, 87, 255) 97.76%);
+	background-color: rgb(135, 1, 199);
+}
+
+.cont {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	gap: 20px;
+	font-size: 18px;
+	flex-wrap: wrap;
+}
+
+.col1_link,
+.fleet,
+.spase {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 290px;
+
+}
+
+.fleet,
+.spase {
+	justify-content: center;
+	align-items: center;
+
+	span {
+		display: flex;
+
+	}
+}
+
+.submenu_dev-tools {
+}
+
+
+.ti-search {
+}
+
+.ti-user {
+}
+
+.ti-shopping-cart {
+}
+
+.fleet {
+	//display: block;
+	&__logo {
+		display: block;
+		width: 48px;
+		height: 48px;
+		background-image: url("../img/fleet-icon.png");
+		background-size: 48px 48px;
+		background-repeat: no-repeat;
+	}
+
+	&__title {
+	}
+}
+
+
+.tools {
+	.titles{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.all-tools {
+		height: 85%;
+		display: flex;
+		.title {
+			padding: 30px 30px 10px 30px;
+			font-size: 15px;
+
+		}
+
+		.wrp{
+			display: flex;
+			//flex-direction: column;
+			flex-wrap: wrap;
+			gap: 50px;
+		}
+		.ides {
+			&__col_1,
+			&__col_2 {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				//gap: 30px;
+
+			}
+
+
+			&__item {
+			}
+		}
+	}
+}
+
+.ide, {
+	padding: 10px 30px;
+	display: flex;
+	gap: 15px;
+	width: 100px;
+	height: 40px;
+
+	&__item {
+		color: #545454;
+		transition: color .2s ease;
+		font-size: 18px;
+
+		&:hover {
+			color: #000;
+		}
+
+	}
+
+}
+.product {
+	display: none;
+	transition: display .2s ease-in-out;
+}
+.idea{
+	width: 200px !important;
+}
+
+.find-your-tool {
+	width: 150%;
+	display: flex;
+	justify-content: space-between;
+
+	&__title {
+		font-size: 18px;
+		font-weight: 100;
+	}
+
+	p {
+		color: #545454;
+	}
+
+	&__btn {
+		font-size: 1.1rem;
+		padding: 10px 30px;
+		font-weight: 500;
+		color: #fff;
+		background-color: #333;
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+		transition: background-color .2s ease;
+
+		&:hover {
+
+			background-color: rgba(51, 51, 51, 0.85);
+
+		}
+	}
+}
+
+.plugins-services {
+	display: flex;
+	flex-direction: column;
+
+	.p-s {
+		padding: 10px 30px;
+		display: flex;
+		gap: 15px;
+		//width: 100px;
+		//height: 40px;
+
+		&__item {
+			color: #545454;
+			transition: color .2s ease;
+			font-size: 18px;
+
+			&:hover {
+				color: #000;
+			}
+
+		}
+	}
+}
+
+
+
+
+
+
+.hr{
+	width: 1px;
+	height: 400px;
+	background-color: #A1A1A3;
+	margin: auto 0;
+}
+
+
+
+
