@@ -124,7 +124,7 @@ body {
 }
 .tools .titles {
   display: flex;
-  justify-content: space-between;
+  jutify-content: space-between;
 }
 .tools .all-tools {
   height: 85%;
@@ -132,17 +132,21 @@ body {
 }
 .tools .all-tools .title {
   padding: 30px 30px 10px 30px;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .tools .all-tools .wrp {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
 }
-.tools .all-tools .ides__col_1, .tools .all-tools .ides__col_2 {
+.tools .all-tools .dnet-vscode__col_1, .tools .all-tools .dnet-vscode__col_2,
+.tools .all-tools .ides__col_1,
+.tools .all-tools .ides__col_2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .ide {
   padding: 10px 30px;
@@ -170,7 +174,7 @@ body {
 }
 
 .find-your-tool {
-  width: 150%;
+  width: 120%;
   display: flex;
   justify-content: space-between;
 }
