@@ -1,0 +1,13 @@
+.header__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	width: 1300px;
+	display: flex;
+	justify-content: space-between;
+}
+@import "navigation";

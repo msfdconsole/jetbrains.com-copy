@@ -1,0 +1,50 @@
+.spase {
+	background-image: linear-gradient(117.63deg, rgb(8, 89, 255) -0.78%, rgb(0, 154, 231) 55.03%, rgb(221, 255, 84) 111.19%);
+	background-color: rgb(22, 125, 255);
+
+}
+
+.fleet {
+	background-image: linear-gradient(130.93deg, rgb(105, 2, 154) 0%, rgb(135, 1, 199) 32.33%, rgb(107, 87, 255) 97.76%);
+	background-color: rgb(135, 1, 199);
+
+	&__logo {
+		display: block;
+		width: 48px;
+		height: 48px;
+		background-image: url("../img/fleet-icon.png");
+		background-size: 48px 48px;
+		background-repeat: no-repeat;
+	}
+}
+
+.cont {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	gap: 20px;
+	font-size: 18px;
+	flex-wrap: wrap;
+}
+
+.col1_link {
+	width: 300px;
+	height: 290px;
+}
+
+.fleet,
+.spase {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 290px;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		display: flex;
+
+	}
+}
+

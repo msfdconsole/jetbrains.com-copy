@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .nav {
   display: flex;
   gap: 25px;
@@ -39,30 +40,36 @@ body {
 }
 .nav__item i {
   color: #A1A1A3;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.nav__item i:hover {
+  color: #fff;
 }
 .nav__item__title {
   color: #A1A1A3;
   font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
 .nav__item__title.active {
   color: #fff;
 }
+.nav__item__title:hover {
+  color: #fff;
+}
 
 .submenu {
-  display: none;
   position: absolute;
   width: 1300px;
   height: 580px;
   top: 186%;
+  display: flex;
   background-color: #fff;
-}
-.submenu_dev-tools {
   right: -469%;
 }
-
-.arrow {
+.submenu .arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -72,17 +79,33 @@ body {
   align-items: center;
   justify-content: center;
 }
-.arrow:hover {
+.submenu .arrow:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hr {
+  width: 1px;
+  height: 400px;
+  background-color: #A1A1A3;
+  margin: auto 0;
 }
 
 .spase {
   background-image: linear-gradient(117.63deg, rgb(8, 89, 255) -0.78%, rgb(0, 154, 231) 55.03%, rgb(221, 255, 84) 111.19%);
   background-color: rgb(22, 125, 255);
 }
+
 .fleet {
   background-image: linear-gradient(130.93deg, rgb(105, 2, 154) 0%, rgb(135, 1, 199) 32.33%, rgb(107, 87, 255) 97.76%);
   background-color: rgb(135, 1, 199);
+}
+.fleet__logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/fleet-icon.png");
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
 }
 
 .cont {
@@ -95,17 +118,17 @@ body {
   flex-wrap: wrap;
 }
 
-.col1_link,
-.fleet,
-.spase {
-  display: flex;
-  flex-direction: column;
+.col1_link {
   width: 300px;
   height: 290px;
 }
 
 .fleet,
 .spase {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 290px;
   justify-content: center;
   align-items: center;
 }
@@ -114,17 +137,9 @@ body {
   display: flex;
 }
 
-.fleet__logo {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-image: url("../img/fleet-icon.png");
-  background-size: 48px 48px;
-  background-repeat: no-repeat;
-}
 .tools .titles {
   display: flex;
-  jutify-content: space-between;
+  justify-content: space-between;
 }
 .tools .all-tools {
   height: 85%;
@@ -137,46 +152,63 @@ body {
 }
 .tools .all-tools .wrp {
   display: flex;
-  flex-wrap: wrap;
   gap: 50px;
 }
-.tools .all-tools .dnet-vscode__col_1, .tools .all-tools .dnet-vscode__col_2,
-.tools .all-tools .ides__col_1,
-.tools .all-tools .ides__col_2 {
+
+.dnet-vscode .col_1,
+.dnet-vscode .col_2,
+.ides .col_1,
+.ides .col_2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.ide {
-  padding: 10px 30px;
+
+.plugins-services .item-link {
+  width: 150px;
+}
+
+.item-link {
+  padding: 10px 20px;
   display: flex;
   gap: 15px;
   width: 100px;
   height: 40px;
 }
-.ide__item {
+.item-link__item {
   color: #545454;
   transition: color 0.2s ease;
-  font-size: 18px;
+  font-size: 16px;
 }
-.ide__item:hover {
+.item-link__item:hover {
   color: #000;
 }
 
 .product {
   display: none;
-  transition: display 0.2s ease-in-out;
+  transition: display 0.3s ease-in-out;
 }
 
 .idea {
-  width: 200px !important;
+  width: 165px !important;
+}
+
+.fyt-wrp {
+  width: 100%;
+  display: flex;
+  height: 85px;
+  background-color: #F4F4F4;
+  justify-content: center;
+  align-items: center;
 }
 
 .find-your-tool {
-  width: 120%;
+  width: 90%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .find-your-tool__title {
   font-size: 18px;
@@ -188,6 +220,7 @@ body {
 .find-your-tool__btn {
   font-size: 1.1rem;
   padding: 10px 30px;
+  height: 50px;
   font-weight: 500;
   color: #fff;
   background-color: #333;
@@ -198,31 +231,6 @@ body {
 }
 .find-your-tool__btn:hover {
   background-color: rgba(51, 51, 51, 0.85);
-}
-
-.plugins-services {
-  display: flex;
-  flex-direction: column;
-}
-.plugins-services .p-s {
-  padding: 10px 30px;
-  display: flex;
-  gap: 15px;
-}
-.plugins-services .p-s__item {
-  color: #545454;
-  transition: color 0.2s ease;
-  font-size: 18px;
-}
-.plugins-services .p-s__item:hover {
-  color: #000;
-}
-
-.hr {
-  width: 1px;
-  height: 400px;
-  background-color: #A1A1A3;
-  margin: auto 0;
 }
 
 /*# sourceMappingURL=style.css.map */

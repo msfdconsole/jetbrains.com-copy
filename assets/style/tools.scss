@@ -1,0 +1,25 @@
+.tools {
+	.titles {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.all-tools {
+		height: 85%;
+		display: flex;
+
+		.title {
+			padding: 30px 30px 10px 30px;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		.wrp {
+			display: flex;
+			gap: 50px;
+		}
+
+
+	}
+}
+@import "devtools";
