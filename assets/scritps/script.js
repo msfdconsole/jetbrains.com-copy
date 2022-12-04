@@ -10,6 +10,12 @@ function header() {
 		}
 		devToolCounter++
 	})
+	// devToolBtn.addEventListener('mousemove',()=>{
+	// 	devToolBtn.classList.add('active')
+	// })
+	// devToolBtn.addEventListener('mouseout',()=>{
+	// 	devToolBtn.classList.remove('active')
+	// })
 	const appcodeTitleHV = document.querySelector('.appcode')
 	appcodeTitleHV.addEventListener('mousemove',()=>{
 		document.querySelector('.product_appcode').style.display = 'flex'
