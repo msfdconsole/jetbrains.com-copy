@@ -23,11 +23,17 @@
 	gap: 15px;
 	width: 100px;
 	height: 40px;
-
+	&.dNet-tools-plugins-link{
+		width: 180px;
+	}
+	&.resharperCpp-link{
+		width: 200px;
+	}
 	&__item {
 		color: #545454;
 		transition: color .2s ease;
 		font-size: 16px;
+
 
 		&:hover {
 			color: #000;
@@ -39,7 +45,7 @@
 
 .product {
 	display: none;
-	transition: display .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 .idea {

@@ -27,6 +27,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__logo:hover * {
+  color: #545454;
+}
 
 .nav {
   display: flex;
@@ -176,6 +179,12 @@ body {
   width: 100px;
   height: 40px;
 }
+.item-link.dNet-tools-plugins-link {
+  width: 180px;
+}
+.item-link.resharperCpp-link {
+  width: 200px;
+}
 .item-link__item {
   color: #545454;
   transition: color 0.2s ease;
@@ -187,7 +196,7 @@ body {
 
 .product {
   display: none;
-  transition: display 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .idea {
