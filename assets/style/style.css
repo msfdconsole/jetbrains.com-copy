@@ -11,7 +11,6 @@ a {
 }
 
 body {
-  background-color: #27282C;
   font-family: "Helvetica", sans-serif;
 }
 
@@ -329,6 +328,186 @@ body {
 }
 .all-team-tools .hr {
   height: 350px;
+}
+
+.inner {
+  width: 100%;
+  background-color: #27282C;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.inner__wrapper {
+  width: 1200px;
+}
+.inner__wrapper .inner__main {
+  margin-top: 45px;
+  color: #fff;
+}
+.inner__wrapper .inner__main .banner-container .banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inner__wrapper .inner__main .banner-container .banner .banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inner__wrapper .inner__main .banner-container .banner .banner__text__title {
+  font-size: 45px;
+  font-weight: 600;
+  width: 880px;
+}
+.inner__wrapper .inner__main .banner-container .banner .banner__text__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+.inner__wrapper .inner__main .banner-container .banner .cards {
+  display: flex;
+  gap: 100px;
+}
+.inner__wrapper .inner__main .banner-container .banner .cards .card {
+  cursor: pointer;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.inner__wrapper .inner__main .banner-container .banner .cards .card__top {
+  display: flex;
+  gap: 10px;
+}
+.inner__wrapper .inner__main .banner-container .banner .cards .card__hr {
+  width: 140px;
+  height: 1px;
+  background-color: #A1A1A3;
+}
+.inner__wrapper .inner__main .banner-container .banner .services {
+  width: 1200px;
+  display: flex;
+  gap: 15px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__datalore {
+  background-image: url(../img/datalore_bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  border-radius: 15px;
+  background-size: cover;
+  width: 815px;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__datalore__wrapper {
+  width: 785px;
+  height: 535px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__datalore__title {
+  font-size: 65px;
+  font-weight: 600;
+  width: 590px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__datalore__subtitle {
+  font-size: 30px;
+  font-weight: 300;
+  width: 370px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__datalore__button {
+  width: 165px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__datalore__comment {
+  color: #545454;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column > * {
+  border-radius: 15px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__riderFlow {
+  background-color: #9A0F8C;
+  width: 400px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__riderFlow__wrapper {
+  width: 370px;
+  height: 235px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__riderFlow__top {
+  display: flex;
+  height: 80%;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__riderFlow__top__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__riderFlow__top__text__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__riderFlow__top__text__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__jbAcademy {
+  background-color: #7E38C2;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__jbAcademy__wrapper {
+  width: 370px;
+  height: 270px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__jbAcademy__top {
+  display: flex;
+  height: 80%;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__jbAcademy__top__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__jbAcademy__top__text__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .services__jbAcademy__top__text__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .banner__button-learn-more {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  border: 0.05px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+.inner__wrapper .inner__main .banner-container .banner .services .services__column .banner__button-learn-more:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */
