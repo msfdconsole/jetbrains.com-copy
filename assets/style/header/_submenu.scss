@@ -3,11 +3,15 @@
 	position: absolute;
 	width: 1300px;
 	height: 580px;
-	top: 186%;
+	top: 185%;
 	//display: flex;
 	background-color: #fff;
-	right: -469%;
+	right: -472%;
+&.submenu_team-tools{
+	height: 420px;
+	right: -541%;
 
+}
 	.arrow {
 		height: 30px;
 		width: 30px;

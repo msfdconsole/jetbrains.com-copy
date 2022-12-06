@@ -8,14 +8,14 @@
 	background-image: linear-gradient(130.93deg, rgb(105, 2, 154) 0%, rgb(135, 1, 199) 32.33%, rgb(107, 87, 255) 97.76%);
 	background-color: rgb(135, 1, 199);
 
-	&__logo {
-		display: block;
-		width: 48px;
-		height: 48px;
-		background-image: url("../../img/fleet-icon.png");
-		background-size: 48px 48px;
-		background-repeat: no-repeat;
-	}
+}
+.datalore{
+	background-image: linear-gradient(120.81deg, rgb(0, 51, 150) 11.31%, rgb(0, 156, 244) 95.37%);
+	background-color: rgb(0, 92, 209);
+}
+.youTrack{
+	background-image: linear-gradient(141.09deg, rgb(216, 6, 99) -21.81%, rgb(131, 76, 239) 33.98%, rgb(0, 181, 226) 100.21%);
+	background-color: rgb(107, 87, 255);
 }
 
 .cont {
@@ -34,7 +34,8 @@
 }
 
 .fleet,
-.spase {
+.spase{
+
 	display: flex;
 	flex-direction: column;
 	width: 300px;
@@ -48,3 +49,28 @@
 	}
 }
 
+.submenu_team-tools{
+	.cont {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		color: #fff;
+		gap: 10px;
+		font-size: 18px;
+		flex-wrap: wrap;
+	}
+}
+.datalore,
+.youTrack{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 210px;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		display: flex;
+
+	}
+}

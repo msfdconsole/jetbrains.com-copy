@@ -27,9 +27,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.header__logo:hover * {
-  color: #545454;
-}
 
 .nav {
   display: flex;
@@ -68,9 +65,13 @@ body {
   position: absolute;
   width: 1300px;
   height: 580px;
-  top: 186%;
+  top: 185%;
   background-color: #fff;
-  right: -469%;
+  right: -472%;
+}
+.submenu.submenu_team-tools {
+  height: 420px;
+  right: -541%;
 }
 .submenu .arrow {
   height: 30px;
@@ -102,13 +103,15 @@ body {
   background-image: linear-gradient(130.93deg, rgb(105, 2, 154) 0%, rgb(135, 1, 199) 32.33%, rgb(107, 87, 255) 97.76%);
   background-color: rgb(135, 1, 199);
 }
-.fleet__logo {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-image: url("../../img/fleet-icon.png");
-  background-size: 48px 48px;
-  background-repeat: no-repeat;
+
+.datalore {
+  background-image: linear-gradient(120.81deg, rgb(0, 51, 150) 11.31%, rgb(0, 156, 244) 95.37%);
+  background-color: rgb(0, 92, 209);
+}
+
+.youTrack {
+  background-image: linear-gradient(141.09deg, rgb(216, 6, 99) -21.81%, rgb(131, 76, 239) 33.98%, rgb(0, 181, 226) 100.21%);
+  background-color: rgb(107, 87, 255);
 }
 
 .cont {
@@ -140,20 +143,45 @@ body {
   display: flex;
 }
 
+.submenu_team-tools .cont {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 10px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.datalore,
+.youTrack {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 210px;
+  justify-content: center;
+  align-items: center;
+}
+.datalore span,
+.youTrack span {
+  display: flex;
+}
+
 .tools .titles {
   display: flex;
   justify-content: space-between;
 }
-.tools .all-tools {
+
+.all-tools {
   height: 85%;
   display: flex;
 }
-.tools .all-tools .title {
+.all-tools .title {
   padding: 30px 30px 10px 30px;
   font-size: 14px;
   font-weight: 600;
 }
-.tools .all-tools .wrp {
+.all-tools .wrp {
   display: flex;
   gap: 50px;
 }

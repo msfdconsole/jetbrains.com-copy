@@ -10,18 +10,14 @@
 	display: flex;
 	justify-content: space-between;
 
-	&__logo {
-		&:hover {
-			* {
-
-				color: #545454;
-			}
-
-			//&::before {
-			//	background-color: rgba(0, 0, 0, .3);
-			//}
-		}
-	}
+	//&__logo {
+	//	&:hover {
+	//		* {
+	//
+	//			color: #545454;
+	//		}
+	//	}
+	//}
 }
 
 @import "header/navigation";
